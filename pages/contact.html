@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<script src="../js/jquery-3.2.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
@@ -7,26 +8,33 @@
 	<title>contact</title>
 
 </head>
+
 <body>
 
 	<div class="topbar">
 
-		
+
 
 		<div class="menu" id="menu">
 			<img src="../images/icons/menuicon.png" onclick="launchmenu()" class="menuicon">
 		</div>
 
 		<div class="logobox">
-			<a href="home.html"><img src="../images/icons/logo.png" class="logo"></a>
+			<a href="home.html">
+				<img src="../images/icons/logo.png" class="logo">
+			</a>
 		</div>
-		
+
 
 		<div class="socialmedia">
-			<a href="https://www.instagram.com/geraldxcannon/?hl=en"><img src="../images/icons/instagramicon.png" class="socialmediaicons"></a>
-			<a href="http://geraldxcannon.tumblr.com/"><img src="../images/icons/tumblricon.png" class="socialmediaicons"></a>
+			<a href="https://www.instagram.com/geraldxcannon/?hl=en">
+				<img src="../images/icons/instagramicon.png" class="socialmediaicons">
+			</a>
+			<a href="http://geraldxcannon.tumblr.com/">
+				<img src="../images/icons/tumblricon.png" class="socialmediaicons">
+			</a>
 		</div>
-		
+
 	</div>
 
 
@@ -34,22 +42,32 @@
 	<nav class="nav navlaunch">
 
 
-			<div class="navbar">
-				<h1 class="menuclose" onclick="launchmenu()">x</h1>
-				<li class="navlist"><a href='home.html'>home</a></li>
-				<li class="navlist"><a href='paper.html'>paper</a></li>
-				<li class="navlist"><a href='crayons.html'>crayon</a></li>
-				<li class="navlist"><a href="notaste.html">no taste</a></li>
-				
-				
-				
-				<li class="navlist"><a href="contact.html">contact</a></li>
-			</div>
-			<div class="navart">
-				
-			</div>
+		<div class="navbar">
+			<h1 class="menuclose" onclick="launchmenu()">x</h1>
+			<li class="navlist">
+				<a href='home.html'>home</a>
+			</li>
+			<li class="navlist">
+				<a href='paper.html'>paper</a>
+			</li>
+			<li class="navlist">
+				<a href='crayons.html'>crayon</a>
+			</li>
+			<li class="navlist">
+				<a href="notaste.html">no taste</a>
+			</li>
 
-			
+
+
+			<li class="navlist">
+				<a href="contact.html">contact</a>
+			</li>
+		</div>
+		<div class="navart">
+
+		</div>
+
+
 	</nav>
 
 
@@ -58,7 +76,7 @@
 
 
 	<div id="page">
-		
+
 
 		<div class="notastecontent">
 			<form class="contactusform" id="contactus" onsubmit="return checkid()">
@@ -69,16 +87,17 @@
 					<option>purchase inquiry</option>
 				</select>
 				<h5>name</h5>
-					<input type="text" name="name" id="name" class="contactusbars">
+				<input type="text" name="name" id="name" class="contactusbars">
 				<h5>e-mail</h5>
-					<input type="e-mail" name="e-mail" id="e-mail" class="contactusbars">
+				<input type="e-mail" name="e-mail" id="e-mail" class="contactusbars">
 				<h5>message</h5>
-					<textarea type="message" name="message" id="message" class="contactusbars" ></textarea><br>
+				<textarea type="message" name="message" id="message" class="contactusbars"></textarea>
+				<br>
 				<div class="submit contactusbars" onclick="validate()">send</div>
 
 
 			</form>
-			
+
 
 
 
@@ -91,4 +110,5 @@
 
 
 </body>
+
 </html>
