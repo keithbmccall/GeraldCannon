@@ -1,0 +1,421 @@
+@keyframes static{
+	0%{
+		width: 100vw;
+		height: 1000px;
+		top: 0%;
+		opacity: 1;
+	}
+	40%{
+		height: 0px;
+		width: 100vw;
+		top: 50%;
+		opacity: 1;
+	}
+	70%{
+		height: 0px;
+		width: 100vw;
+		top: 50%;
+		opacity: 1;
+	}
+	95%{
+		top: 50%;
+		height: 0px;
+		width: 100vw;
+		opacity: 1;
+	}
+	98%{
+		top: 50%;
+		height: 0px;
+		width: 100vw;
+		opacity: 0;
+	}
+	100%{
+		z-index: -10;
+		height: 0px;
+		width: 100vw;
+		opacity: 0;
+	}
+}
+@keyframes slidein{
+	0%{
+		/*margin-left: 800px;*/
+		opacity: 0;
+	}
+	65%{
+		opacity: 1;
+	}
+	100%{
+		/*margin-left: 0px; */
+		opacity: 1;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+body{
+	overflow-y: hidden;
+	font-family: 'Barlow', sans-serif;
+}
+.scrollablebody{
+	overflow-y: scroll;
+}
+#static{
+	width: 100vw;
+	height: 1000px;
+	background: url('../images/static.gif');
+	background-size: cover;
+	position: absolute;
+	z-index: 15;
+	cursor: pointer;
+}
+#staticgone{
+	animation: static .5s ease-out;
+	background: url('../images/static.gif');
+	background-size: cover;
+	position: absolute;
+	z-index: 15;
+	cursor: pointer;
+
+}
+
+	
+#page{
+	width: 100vw;
+	height: 800px;
+	background: white;
+
+	
+	
+
+}
+
+/*NAVIGATIONAL STUFF */
+.topbar{
+	position: fixed;
+	background: rgba(0,0,0,0);
+	/*background: red;*/
+	height: 150px;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;  /*width of the columns*/
+	box-shadow: 0px 0px 0px black;
+	z-index: 10;
+}
+
+.logobox{
+	grid-column-start: 2;
+	height: 100%;
+	padding-left: 29%;
+	
+
+}
+.logo{
+	width: 160px;
+	margin-top: 60px;
+	
+	
+}
+.menu{
+	grid-column-start: 1;
+	padding-left: 45%;
+	height: 100%;
+}
+.menuicon{
+	width: 30px;
+	margin-top: 100px;
+	cursor: pointer;
+}
+.socialmedia{
+	grid-column-start: 3;
+	padding-left: 60%;
+
+}
+.socialmediaicons{
+	width: 30px;
+	margin-top: 100px;
+	right: 0%;
+
+}
+
+
+.nav{
+	position: fixed;
+	margin-left: -1400px;
+	opacity: 0.5;
+	width: 65%;
+	height: 100%;
+	display: flex;
+	box-shadow: 4px 0 5px grey;
+	background: white;
+}
+.navlaunch{
+	transition: all .3s ease-out;
+}
+.navopen{
+	position: fixed;
+	margin-left: 0px;
+	opacity: 1;
+	width: 70%;
+	height: 100%;
+	background: white;
+	display: flex;
+	box-shadow: 0 1px 4px black;
+	z-index: 110;
+}
+.menuclose{
+	padding: 0 0 100px 0; 
+	width: 30px;
+	margin-top: 98px;
+	margin-left: 25px; 
+	cursor: pointer;
+
+}
+.navbar{
+	padding: 0 0 0 20%;
+	font-size: 20px;
+	line-height: 40px;
+	flex: 1;
+	box-shadow: 0 1px 1px grey;
+	display: flex;
+	flex-direction: column;
+	
+}
+.navart{
+	background: url('../images/static.gif');
+	flex: 2;
+	background-size: cover;
+}
+.navlist{
+	list-style-type: none;
+}
+.navlist a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+.navlist a:hover, a:active{
+	color: rgba(0,0,0,.5);
+}
+
+/*ACTUAL PAGE CONTENT BELOW*/
+
+.homecontent{
+	display: grid;
+	grid-template-columns: 18% 40% 30%;
+	width: 100%;
+	padding-top: 150px;
+}
+.slidecontainer{
+	width: 100%;
+	height: 530px;
+	grid-column-start: 2;
+	overflow: hidden;
+	margin-top: 70px;
+
+}
+.slidetext{
+	margin-top: 70px;
+	padding: 50px 50px;
+	line-height: 40px;
+}
+
+.slide{
+
+	background-size: cover;
+	height: 200%;
+	margin-top: -600px;
+}
+.slidein{
+	animation: slidein 3s ease-out;
+
+}
+.pagetitle{
+	padding: 170px 20% 0 20%;
+	font-size: 30px;
+}
+.pagesubtitle{
+	font-size: 14px;
+}
+.generalcontent{
+	display: grid;
+	grid-template-columns: 140px 140px 140px 140px;
+	padding: 0px 20% 0 20%;
+	justify-content: space-between;
+}
+.galleryimagescontainer{
+	padding: 40px 2px 0px 2px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.galleryimages{
+	width: 100%;
+	
+}
+.galleryimagescontainer:hover{
+	opacity: .5;
+
+}
+.piececontainer{
+	padding-top: 200px;
+	display: grid;
+	grid-template-columns: 33% 30% 30% auto;
+	font-size: 15px;
+	
+}
+
+.pieceimagescontainer{
+	grid-column-start: 2;
+	box-shadow: 2px 1px 5px grey;
+}
+
+.notastecontent{
+	display: grid;
+	grid-template-columns: 15% 50% 30px 30% auto;
+	padding: 250px 20% 0 20%;
+}
+.notastetext{
+	grid-column-start: 2;
+	height: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+
+}
+.notastegalleryR{
+	display: flex;
+	height: 400px;
+	width: 100%;
+	grid-column-start: 4;
+	flex-direction: column;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+.notastetext:hover, .notastegalleryR:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 2px 10px black;
+}
+/*.notastegalleryL{
+	display: flex;
+	position: relative;
+	bottom: 0%;
+	height: 417px;
+	width: 100%;
+	overflow: scroll;
+	flex-direction: column;
+	
+}*/
+.notasteimagessubcontainer{
+	
+}
+
+/*GALLERY SLIDESHOW ON PAPER AND CRAYON PAGES*/
+
+#lightboxbackground{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 25%; 
+	background: rgba(0,0,0,.5);
+	display: grid;
+	grid-template-columns: 25% 30% 30%;
+	display: none;
+	z-index: 19;
+}
+.lightbox{
+	
+	grid-column-start: 2;
+	position: relative;
+	top: 13%;
+	background: white;
+	width: 650px;
+	height: 550px;
+	box-shadow: 10px 10px 40px black;
+}
+.galleryslide{
+}
+
+.galleryslideimage{
+
+	width: 300px;
+	margin-top: 100px;
+	margin-left: 30px;
+	position: absolute;
+	
+}
+.details{
+	position: absolute;
+	margin-left: 340px;
+	margin-top: 300px;
+	line-height: 30px;
+	
+	
+
+}
+.slideshowbuttons{
+	position: fixed;
+	margin-left: 340px;
+	margin-top: 240px;
+	cursor: pointer;
+}
+.slideshowbuttons a:link, a:visited{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+}
+.slideshowbuttons a:hover, a:active{
+	text-decoration: none;
+	color: rgba(0,0,0,.7);
+}
+.x_out{
+	position: absolute;
+	margin-left: 95%;
+	cursor: pointer;
+}
+/*CONTACT FORM*/
+
+.contactusbars{
+	width: 110%;
+	font-size: 10px;
+	border: 1px solid black;
+	padding: 5px;
+
+}
+textarea{
+	height:200px;
+	resize: none;
+}
+h5{
+	margin: 5px 0px;
+}
+
+.submit{
+	margin-top: 10px;
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+}
+.contactusform{
+	grid-column-start: 2;
+	height: 400px;
+	width: 100%;
+	margin-top: -50px;
+	margin-left: 50px;
+	min-width: 300px;
+}
+#select{
+	width: 113%;
+}
+.thankyoutable{
+	margin-top: 70px;
+	padding: 50px 50px;
+	line-height: 40px;
+	font-size: 30px;
+	text-align: left;
+}
